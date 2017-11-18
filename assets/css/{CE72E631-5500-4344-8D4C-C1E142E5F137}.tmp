@@ -1,0 +1,48 @@
+nav.navbar {
+   position: absolute;
+   width: 100%;
+   top: 0px;
+   left: 0px;
+}
+ul.nav-vertical {
+   position: absolute;
+   left: 0px;
+   width: 125px;
+}
+  .container {
+   margin-top: 56px;
+   margin-left: 0px;
+}
+  .footer {
+   position: absolute;
+   bottom: 0px;
+   width: 100%;
+}
+
+
+/* Custom css */
+  .nav-w-submenu-container {
+   position:absolute;
+   right:0;
+   width:400px;
+   height: 100%;
+   /*float:right; */
+}
+/*  .nav-w-submenu-container .nav-vertical {
+   left: auto; */
+/*}*/
+
+.nav-w-submenu-container  .nav-vertical .nav-link.active {
+   margin-right: auto;
+   margin-left: -0.5rem;
+   padding-left: 1.2rem; */
+}
+  .nav-w-submenu-container .nav-vertical-submenu.active {
+   margin-right: 97px;
+   margin-left:auto;
+  /* padding: 20px 0; */
+}
+.nav-w-submenu-container .nav-vertical-submenu {
+  margin-right: -200px;
+  margin-left:auto;
+}
