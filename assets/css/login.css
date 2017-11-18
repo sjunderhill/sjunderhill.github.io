@@ -1,0 +1,103 @@
+
+.login-container {
+  width: 730px;
+  height: 545px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.login-title {
+  position: absolute;
+  height: 14px;
+  width: 245px;
+  top: 35px;
+  left: 25px;
+  background-image: url("../img/willistowerswatson-logo.svg");
+}
+.login-content {
+  position: absolute;
+  height: 50px;
+  width: 250px;
+  top: 185px;
+  left: 25px;
+  bbackground-image: url("http://placehold.it/250x50");
+}
+.login-footer {
+  position: absolute;
+  height: 125px;
+  width: 730px;
+  bottom: 0px;
+  left: 0px;
+  border-top: 1px solid #009ed1;
+  background-image: url("../img/wtw_trees_730_125.jpg");
+}
+.login {
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  width: 350px;
+  height: 480px;
+  padding: 40px;
+}
+.mobile-login-container {
+  display: none;
+  width: 100%;
+}
+.mobile-login-title {
+  height: 25px;
+  width: 250px;
+  background-image: url("http://placehold.it/250x25");
+}
+.mobile-login-content {
+  height: 50px;
+  width: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-image: url("http://placehold.it/250x50");
+}
+.form-group {
+  margin-top: 40px;
+}
+.login-button {
+  margin-top: 40px;
+}
+.help {
+  margin-top: 30px
+}
+.button-container {
+  margin-top: 50px;
+}
+@media (max-width: 544px) {
+  .login-container {
+    display: none;
+  }
+  .mobile-login-container {
+    display: block;
+  }
+  .login-footer {
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    border-top: 1px solid #009ed1;
+    background-image: url("http://placehold.it/730x125");
+  }
+  .login {
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 580px;
+    padding: 10px 20px;
+  }
+  .form-group {
+    margin-top: 0px;
+  }
+  .login-button {
+    margin-top: 0px;
+  }
+  .forgot {
+    margin-left: 20px;
+  }
+}
