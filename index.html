@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- WTW Toolkit CSS -->
+
+  <link href="assets/css/normalize.css" rel="stylesheet">
+  <link href="assets/css/toolkit.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-slider.css" rel="stylesheet">
+
+  <title>WTW Navigator - Demo</title>
+
+</head>
+
+<body>
+  <!-- Standard Header -->
+  <div>
+  <nav class="navbar navbar-light bg-software-gray-1">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/navlogo.png" width="36" height="36" class="d-inline-block align-top" alt="">
+      <div class="navbar-brand-title display-2" style="font-size:1.05em; font-weight:bold">Fund Navigator</div>
+    </a>
+    <div class="float-xs-right">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            User - Demo<span class="caret caret-gray"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#">Logout</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            Alerts <span class="tag tag-pill tag-default align-middle">5</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<!-- Standard Vertical Global Navigation -->
+<div class="MainSection" style="top:56px; position:absolute; width:100%; height:984px">
+  <div style="left:0; position:absolute; width:100%; height:100%; padding-top:0px; padding-left:0px; padding-right:0px;">
+    <ul class="nav nav-horizontal nav-horizontal-dark nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#Members">
+          Membership
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#Cashflows">
+          Net Cashflows
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#Assets">
+          Assets
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#Cashflows">
+          Fee Revenue
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#Liquidity">
+          Liquidity
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Left Nav bar -->
+<div style="height:950px">
+  <div class="nav-w-submenu-container" style="top:35px; z-index:9">
+
+    <ul class="nav nav-vertical nav-vertical-light nav-pills nav-stacked">
+      <li class="nav-item" data-for="demographic-submenu">
+        <a class="nav-link active">
+          <img class="dark-nav-img" src="assets/img/icons8-Joining Queue-50_black.png" alt="Contributions">
+          <img class="light-nav-img" src="assets/img/icons8-Joining Queue-50_white.png" alt="Contributions">
+          <br>Demographic
+        </a>
+      </li>
+      <li class="nav-item" data-for="economic-submenu">
+        <a class="nav-link">
+          <img class="dark-nav-img" src="assets/img/icons8-Stocks-50_black.png" alt="Economic">
+          <img class="light-nav-img" src="assets/img/icons8-Stocks-50_white.png" alt="Economic">
+          <br>Economic
+        </a>
+      </li>
+      <li class="nav-item" data-for="conts-submenu">
+        <a class="nav-link">
+          <img class="dark-nav-img" src="assets/img/icons8-Donate-50_black.png" alt="Contributions">
+          <img class="light-nav-img" src="assets/img/icons8-Donate-50_white.png" alt="Contributions">
+          <br>Contributions
+        </a>
+      </li>
+      <li class="nav-item" data-for="fees-submenu">
+        <a class="nav-link">
+          <img class="dark-nav-img" src="assets/img/icons8-Transaction-50_black.png" alt="Fees">
+          <img class="light-nav-img" src="assets/img/icons8-Transaction-50_white.png" alt="Fees">
+          <br>Fees
+        </a>
+      </li>
+      <li class="nav-item" data-for="member-submenu">
+        <a class="nav-link">
+          <img class="dark-nav-img" src="assets/img/icons8-Receive Cash-50_black.png" alt="Benefits">
+          <img class="light-nav-img" src="assets/img/icons8-Receive Cash-50_white.png" alt="Benefits">
+          <br>Benefits
+        </a>
+      </li>
+      <li class="nav-item" data-for="scenario-submenu">
+        <a class="nav-link">
+          <img class="dark-nav-img" src="assets/img/icons8-Test Passed-50_black.png" alt="Scenario Testing">
+          <img class="light-nav-img" src="assets/img/icons8-Test Passed-50_white.png" alt="Scenario Testing">
+          <br>Scenario Testing
+        </a>
+      </li>
+      <li class="nav-item" data-for="illiquids-submenu">
+        <a class="nav-link">
+          <img class="dark-nav-img" src="assets/img/icons8-Chart-50_black.png" alt="Illiquid Assets">
+          <img class="light-nav-img" src="assets/img/icons8-Chart-50_white.png" alt="Illiquid Assets">
+          <br>Illiquid Assets
+        </a>
+      </li>
+    </ul>
+
+    <!-- Sub Menu Panels -->
+    <ul class="nav-vertical-dark nav-vertical-submenu demographic-submenu active">
+      <li>
+        <a style="color:#000; font-weight:bold">Active Members</a><br>
+        <a style="color:#000">Retention Rate</a>
+        <div style="width:200px; margin-bottom:20px">
+          <input
+            class="slider slider-retention"
+            type="text"
+            data-provide="slider"
+            data-slider-min="0"
+            data-slider-max="100"
+            data-slider-step="1"
+            data-slider-value="80"
+            data-slider-handle="square"
+            data-slider-tooltip="always"
+            data-slider-tooltip-position="bottom"
+          >
+        </div>
+      </li>
+      <li>
+        <a style="color:#000; font-weight:bold">New Entrants</a><br>
+        <a style="color:#000">Replacement Ratio</a>
+        <div style="width:200px; margin-bottom:20px">
+          <input
+            class="slider slider-replacement"
+            type="text"
+            data-provide="slider"
+            data-slider-min="0"
+            data-slider-max="120"
+            data-slider-step="1"
+            data-slider-value="80"
+            data-slider-handle="square"
+            data-slider-tooltip="always"
+            data-slider-tooltip-position="bottom"
+          >
+        </div>
+        <a style="color:#000">New Entrant Profile</a><br>
+        <select class="custom-select" style="width:200px">
+          <option value="1">Base Case</option>
+          <option value="2">Younger</option>
+          <option value="3">Older</option>
+        </select>
+      </li>
+      <li>
+        <a style="color:#000; font-weight:bold">Retained Members</a><br>
+        <a style="color:#000">Exit Rate Adjustment</a>
+        <div style="width:200px; margin-bottom:20px">
+          <input
+            class="slider slider-mortality"
+            type="text"
+            data-provide="slider"
+            data-slider-min="75"
+            data-slider-max="125"
+            data-slider-step="1"
+            data-slider-value="100"
+            data-slider-handle="square"
+            data-slider-tooltip="always"
+            data-slider-tooltip-position="bottom"
+            data-slider-enabled="true"
+          >
+        </div>
+      </li>
+      <li>
+        <a style="color:#000; font-weight:bold">Pensioner Members</a><br>
+        <a style="color:#000">Mortality Rate Adjustment</a>
+        <div style="width:200px; margin-bottom:20px">
+          <input
+            class="slider slider-mortality"
+            type="text"
+            data-provide="slider"
+            data-slider-min="75"
+            data-slider-max="125"
+            data-slider-step="1"
+            data-slider-value="100"
+            data-slider-handle="square"
+            data-slider-tooltip="always"
+            data-slider-tooltip-position="bottom"
+            data-slider-enabled="true"
+          >
+        </div>
+      </li>
+    </ul>
+
+    <ul class="nav-vertical-dark nav-vertical-submenu economic-submenu">
+      <li>
+        <a style="color:#000; font-weight:bold">Economic Scenario</a><br>
+        <a style="color:#000">Long-Term Assumption</a>
+        <select class="custom-select select-picker selectpicker-econscen" style="width:200px">
+          <option value="1">Central Outlook</option>
+          <option value="2">Upside</option>
+          <option value="3">Downside</option>
+          <option value="7">Global Deflation</option>
+          <option value="8">Global Stagflation</option>
+          <option value="6">China Credit Risk</option>
+          <option value="4">New Energy Order</option>
+          <option value="5">Eurozone Break-up</option>
+        </select>
+      </li>
+      <li>
+        <a style="color:#000; font-weight:bold">Wage Inflation</a><br>
+        <a style="color:#000">Real Wage Inflation</a>
+        <div style="width:200px; margin-bottom:20px">
+          <input
+            class="slider slider-mortality"
+            type="text"
+            data-provide="slider"
+            data-slider-min="0"
+            data-slider-max="3.0"
+            data-slider-step="0.5"
+            data-slider-value="1.5"
+            data-slider-handle="square"
+            data-slider-tooltip="always"
+            data-slider-tooltip-position="bottom"
+            data-slider-enabled="true"
+          >
+        </div>
+      </li>
+    </ul>
+    <ul class="nav-vertical-dark nav-vertical-submenu conts-submenu">
+
+      <li>
+        <a style="color:#000; font-weight:bold">Contributions Rates</a><br>
+        <a style="color:#000">Contribution Rate Increases</a><br>
+        <select class="custom-select" style="width:200px">
+          <option value="1">In line with SG</option>
+          <option value="2">10% to 12% by 2020</option>
+          <option value="3">9.5% to 15% by 2020</option>
+        </select>
+        <br>
+        <a style="color:#000">Contribution Adjustment</a>
+        <div style="width:200px; margin-bottom:20px">
+          <input
+            class="slider slider-contscale"
+            type="text"
+            data-provide="slider"
+            data-slider-min="75"
+            data-slider-max="125"
+            data-slider-step="1"
+            data-slider-value="100"
+            data-slider-handle="square"
+            data-slider-tooltip="always"
+            data-slider-tooltip-position="bottom"
+          >
+        </div>
+      </li>
+
+      <li style="line-heigght:1">
+        <a style="color:#000; font-weight:bold">Contributions Tax</a><br>
+        <a style="color:#000">Contributions Tax Rate</a>
+        <div class="input-group" style="width:200px">
+          <input type="text" class="form-control" placeholder="15" style="text-align:right" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-addon">%</span>
+        </div>
+      </li>
+    </ul>
+    <ul class="nav-vertical-dark nav-vertical-submenu fees-submenu">
+      <li>
+        <a style="color:#000; font-weight:bold">Member Account Fees</a><br>
+        <a style="color:#000">Member Fee</a>
+        <div class="input-group" style="width:200px">
+          <span class="input-group-addon">$</span>
+          <input type="text" class="form-control" value="78" style="text-align:right" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-addon">pa</span>
+        </div>
+        <a style="color:#000">Asset Fee</a>
+        <div class="input-group" style="width:200px">
+          <input type="text" class="form-control" value="30" style="text-align:right" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-addon">bps</span>
+        </div>
+        <a style="color:#000">Fee Cap</a>
+        <div class="input-group" style="width:200px">
+          <span class="input-group-addon">$</span>
+          <input type="text" class="form-control" style="text-align:right" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-addon">pa</span>
+        </div>
+      </li>
+      <li>
+        <a style="color:#000; font-weight:bold">Insurance Premiums</a><br>
+        <a style="color:#000">Death/TPD Insurance</a>
+        <div class="input-group" style="width:200px">
+          <input type="text" class="form-control" value="6" style="text-align:right" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-addon">units</span>
+        </div>
+      </li>
+    </ul>
+    <ul class="nav-vertical-dark nav-vertical-submenu member-submenu">
+      <li><a style="color:#000">Option Switching</a>
+      <li><a style="color:#000">Drawdown Pattern</a>
+      <li><a style="color:#000">Lump Sum on Retirement</a>
+    </ul>
+    <ul class="nav-vertical-dark nav-vertical-submenu asset-submenu">
+      <li><a style="color:#000">Statrategic Asset Allocations</a><span class="caret"></span></li>
+      <li><a style="color:#000">Option Rebalancing</a><span class="caret"></span></li>
+      <li><a style="color:#000">Class Rebalancing</a><span class="caret"></span></li>
+    </ul>
+
+    <ul class="nav-vertical-dark nav-vertical-submenu scenario-submenu">
+      <li>
+        <a style="color:#000; font-weight:bold">Economic Scenario</a><br>
+        <a style="color:#000">Investment Returns</a><br>
+        <select class="custom-select selectpicker-shockscen" style="width:200px">
+          <option value="1">None</option>
+          <option value="2">10% Equity Decline</option>
+          <option value="3">25% Equity Decline</option>
+          <option value="5">GFC</option>
+          <option value="4">Asian Crisis (1997)</option>
+          <option value="6">Global Stagflation</option>
+          <option value="7">China Credit Risk</option>
+          <option value="8">New Energy Order</option>
+          <option value="9">Eurozone Break-up</option>
+        </select>
+        <li>
+        <a style="color:#000; font-weight:bold">Member Behaviour</a><br>
+        <a style="color:#000">Option Switching</a><br>
+        <select class="custom-select" style="width:200px">
+          <option value="1">None</option>
+          <option value="2">20% Switch to Cash</option>
+          <option value="3">50% Switch to Cash</option>
+        </select>
+        <br>
+        <a style="color:#000">Member Contributions</a>
+        <div style="width:200px; margin-bottom:20px">
+          <input
+            class="slider slider-shockmemconts"
+            type="text"
+            data-provide="slider"
+            data-slider-min="50"
+            data-slider-max="150"
+            data-slider-step="1"
+            data-slider-value="100"
+            data-slider-handle="square"
+            data-slider-tooltip="always"
+            data-slider-tooltip-position="bottom"
+          >
+        </div>
+      </li>
+
+      <li>
+        <a style="color:#000">Shock Timing (Year)</a>
+        <div style="width:200px; margin-bottom:20px">
+          <input
+            class="slider slider-shocktime"
+            type="text"
+            data-provide="slider"
+            data-slider-min="1"
+            data-slider-max="20"
+            data-slider-step="1"
+            data-slider-value="0"
+            data-slider-handle="square"
+            data-slider-tooltip="always"
+            data-slider-tooltip-position="bottom"
+          >
+        </div>
+      </li>
+    </ul>
+
+    <ul class="nav-vertical-dark nav-vertical-submenu illiquids-submenu">
+      <li>
+        <div><a style="color:#000; font-weight:bold">Future Commitments</a><br>
+        <a style="color:#000; font-weight:bold">Private Equities</a><br>
+        <a style="color:#000">Commitment</a><br>
+        <div style="width:200px; margin-bottom:20px">
+          <input
+            class="slider slider-PE_New_Amount"
+            type="text"
+            data-provide="slider"
+            data-slider-min="0"
+            data-slider-max="1000"
+            data-slider-step="1"
+            data-slider-value="0"
+            data-slider-handle="square"
+            data-slider-tooltip="always"
+            data-slider-tooltip-position="bottom"
+          >
+        </div>
+        <div style="margin-top:10px"><a style="color:#000; font-weight: 400">Timing</a></div>
+        <div style="width:200px; margin-bottom:20px">
+          <input
+            class="slider slider-PE_New_Timing"
+            type="text"
+            data-provide="slider"
+            data-slider-min="0"
+            data-slider-max="10"
+            data-slider-step="1"
+            data-slider-value="0"
+            data-slider-handle="square"
+            data-slider-tooltip="always"
+            data-slider-tooltip-position="bottom"
+          >
+        </div>
+      </li>
+      <li><a style="color:#000; font-weight:bold">Ratio Target and Limits</a>
+        <div class="input-group" style="width:200px; margin-top:20px">
+          <span class="input-group-addon" style="width: 110px; text-align:left">Upper Limit</span>
+          <input type="text" class="form-control illiquidUpper" value="35" style="text-align:right" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-addon">%</span>
+        </div>
+        <div class="input-group" style="width:200px; margin-top:20px">
+          <span class="input-group-addon" style="width: 110px; text-align:left">Target</span>
+          <input type="text" class="form-control illiquidTarget" value="22" style="text-align:right" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-addon">%</span>
+        </div>
+        <div class="input-group" style="width:200px; margin-top:20px; margin-bottom:20px"">
+          <span class="input-group-addon" style="width: 110px; text-align:left">Lower Limit</span>
+          <input type="text" class="form-control illiquidLower" value="15" style="text-align:right" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-addon">%</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>
+  <!-- CHART AREA -->
+  <div style="left:0; top:0px; position:absolute; width:100%; height:940px; margin-top:61px; padding-top:0px; padding-left:410px; padding-right:35px;">
+    <div class="tab-content">
+      <!-- MEMBERS -->
+      <div style="float:right">
+        <div class="btn-group" style="border: 1px solid transparent; border-color: #9a9999">
+          <button
+            type="button"
+            class="btn dropdown-toggle"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            styrle="color:#00a0d2"
+          >
+            Export
+            <span class="caret caret-bg-gray"></span>
+          </button>
+          <div class="dropdown-menu" style="border: 1px solid transparent; border-color: #9a9999;">
+            <a class="dropdown-item" href="#">Chart</a>
+            <a class="dropdown-item" href="#">Data to Excel</a>
+          </div>
+        </div>
+      </div>
+      <div id="Members" class="tab-pane fade in active">
+        <h1 class="display-1" style="margin-bottom:15px">Membership Projection</h1>
+        <div class="card card-tabs bg-software-gray-1_">
+          <div class="card-header" style="margin-left:0; margin-right:0">
+            <ul class="nav nav-tabs card-header-tabs float-xs-left">
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#MemByCat">By Category</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#MemAgeProfile">Age Profile</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-block" style="padding-left=0">
+            <div class="tab-content">
+              <div id="MemByCat" class="tab-pane fade">
+                <canvas id="chartMem_Cat" width="450" height="200"></canvas>
+              </div>
+              <div id="MemAgeProfile" class="tab-pane fade in active">
+                <canvas id="chartMem_AgeProfile" width="450" height="200"></canvas>
+                <div style="padding-top:20px">
+                  <div style="width:60px; float:left">Year:</div>
+                  <div style="width:85%; float:left">
+                    <input
+                      class="slider slider-ageprofile"
+                      type="text"
+                      data-provide="slider"
+                      data-slider-min="0"
+                      data-slider-max="20"
+                      data-slider-step="1"
+                      data-slider-value="0"
+                      data-slider-handle="square"
+                      data-slider-tooltip="always"
+                    >
+                    <div class="slider-label">
+                      <span>0</span>
+                      <span class="float-xs-right">20</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ASSETS -->
+      <div id="Assets" class="tab-pane fade">
+        <h1 class="display-1" style="margin-bottom:15px">Asset Projection</h1>
+        <div class="card card-tabs bg-software-gray-1_">
+          <div class="card-header" style="margin-left:0; margin-right:0">
+            <ul class="nav nav-tabs card-header-tabs float-xs-left">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#AssetByCat">By Category</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#AssetByOpt">By Option</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#AssetComp">Compare</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-block" style="padding-left=0">
+            <div class="tab-content">
+              <div id="AssetByCat" class="tab-pane fade in active">
+                <canvas id="chartAsset_Cat" width="450" height="200"></canvas>
+              </div>
+              <div id="AssetByOpt" class="tab-pane fade">
+                <canvas id="chartAsset_Opt" width="450" height="200"></canvas>
+              </div>
+              <div id="AssetComp" class="tab-pane fade">
+                <canvas id="chartAsset_Comp" width="450" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CASHFLOWS -->
+      <div id="Cashflows" class="tab-pane fade">
+        <h1 class="display-1" style="margin-bottom:15px">Cashflow Projection</h1>
+        <div class="card card-tabs bg-software-gray-1_">
+          <div class="card-header" style="margin-left:0; margin-right:0">
+            <ul class="nav nav-tabs card-header-tabs float-xs-left">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#CFComp">Net Cashflows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#CFInc">Inflows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#CFExp">Outflows</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-block" style="padding-left=0">
+            <div class="tab-content">
+              <div id="CFComp" class="tab-pane fade  in active">
+                <canvas id="chartCF_IncExp" width="450" height="200"></canvas>
+              </div>
+              <div id="CFInc" class="tab-pane fade">
+                <canvas id="chartCF_Inc" width="450" height="200"></canvas>
+              </div>
+              <div id="CFExp" class="tab-pane fade">
+                <canvas id="chartCF_Exp" width="450" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- INVESTMENT RETURNS -->
+      <div id="InvRet" class="tab-pane fade">
+        <h1 class="display-1" style="margin-bottom:15px">Investment Returns</h1>
+        <div class="card card-tabs bg-software-gray-1_">
+          <div class="card-header" style="margin-left:0; margin-right:0">
+            <ul class="nav nav-tabs card-header-tabs float-xs-left">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#InvRetClass">By Asset Class</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#InvRetOpt">By Option</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#InvRetAlloc">Asset Allocations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-block" style="padding-left=0">
+            <div class="tab-content">
+              <div id="InvRetClass" class="tab-pane fade in active">
+                <canvas id="chartInvret_Class" width="450" height="200"></canvas>
+              </div>
+              <div id="InvRetOpt" class="tab-pane fade">
+                <canvas id="chartInvret_Opt" width="450" height="200"></canvas>
+              </div>
+              <div id="InvRetAlloc" class="tab-pane fade">
+                <canvas id="chartInvret_SAA" width="450" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- STOCHASTIC -->
+      <div id="Stochastic" class="tab-pane fade">
+        <h1 class="display-1" style="margin-bottom:15px">Stochastic Analysis</h1>
+        <div class="card card-tabs bg-software-gray-1_">
+          <div class="card-header" style="margin-left:0; margin-right:0">
+            <ul class="nav nav-tabs card-header-tabs float-xs-left">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#StochAsset">Assets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#StochCF">Cashflows</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-block" style="padding-left=0">
+            <div class="tab-content">
+              <div id="StochAsset" class="tab-pane fade in active">
+                <canvas id="chartStoch_Asset" width="450" height="200"></canvas>
+              </div>
+              <div id="StochCF" class="tab-pane fade">
+                <canvas id="chartStoch_CF" width="450" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- LIQUIDITY -->
+      <div id="Liquidity" class="tab-pane fade">
+        <h1 class="display-1" style="margin-bottom:15px">Fund Liquidity Analysis</h1>
+        <div class="card card-tabs bg-software-gray-1_">
+          <div class="card-header" style="margin-left:0; margin-right:0">
+            <ul class="nav nav-tabs card-header-tabs float-xs-left">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#IlliquidRatio">Illiquidity Ratio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#IlliquidAssets">Illiquid Assets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#IlliquidCallDist">Existing Calls and Distributions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#IlliquidCallDist_New">New Calls and Distributions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-block" style="padding-left=0">
+            <div class="tab-content">
+              <div id="IlliquidRatio" class="tab-pane fade in active">
+                <canvas id="chartLiquidity" width="450" height="200"></canvas>
+              </div>
+              <div id="IlliquidAssets" class="tab-pane fade in">
+                <canvas id="chartIlliquidAssets" width="450" height="200"></canvas>
+              </div>
+              <div id="IlliquidCallDist" class="tab-pane fade in">
+                <canvas id="chartIlliquidCallDist" width="450" height="200"></canvas>
+              </div>
+              <div id="IlliquidCallDist_New" class="tab-pane fade in">
+                <canvas id="chartIlliquidCallDist_New" width="450" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+    <!-- Bootstrap Container -->
+
+      <!-- Standard Footer -->
+      <div>
+      <footer class="footer clearfix">
+        <div class="float-xs-left footer-content">
+          <img class="footer-logo" src="assets/img/willistowerswatson-logo.svg" alt="Willis Towers Watson">
+          <a class="footer-link" href="#">Terms of Service</a>
+          <a class="footer-link" href="#">Privacy Policy</a>
+        </div>
+        <div class="float-xs-right">
+          <small class="footer-copyright">&copy; 2017 Willis Towers Watson</small>
+        </div>
+        <div style="width:250px; margin-left:93px; text-align:center; position:absolute; bottom:95px; z-index:99">
+          <button type="button" class="btn btn-primary btn-update">Update Chart</button>
+        </div>
+      </footer>
+      </div>
+
+      <!-- Javascript files -->
+      <script src="assets/js/jquery-3.1.1.min.js"></script>
+      <script src="assets/js/tether.min.js"></script>
+      <script src="assets/js/toolkit.js"></script>
+      <script src="assets/js/chart.js"></script>
+      <script src="assets/js/wNumb.js"></script>
+      <script src="assets/js/bootstrap-slider.js"></script>
+      <!--- Initial Values --->
+      <script src="assets/js/assumptions/initialValues.js"></script>
+      <!--- Functions --->
+      <script src="assets/js/functions/arraySetup.js"></script>
+      <script src="assets/js/functions/chartUpdate.js"></script>
+      <script src="assets/js/functions/illiquidCalcs.js"></script>
+      <!--- Assumptions --->
+      <script src="assets/js/assumptions/labels.js"></script>
+      <script src="assets/js/assumptions/tablesDecs.js"></script>
+      <!--- Data --->
+      <script src="assets/js/data/dataMem.js"></script>
+      <script src="assets/js/data/dataAsset_Cat.js"></script>
+      <script src="assets/js/data/dataAsset_Opt.js"></script>
+      <script src="assets/js/data/dataAsset_Tot.js"></script>
+      <script src="assets/js/data/dataCF.js"></script>
+      <script src="assets/js/data/dataChart.js"></script>
+      <script src="assets/js/data/dataStoch.js"></script>
+      <script src="assets/js/data/dataInvRet.js"></script>
+      <script src="assets/js/data/dataIlliquidAssets.js"></script>
+      <script src="assets/js/data/dataLiquidity.js"></script>
+      <!--- Models --->
+      <script src="assets/js/model/modelDemographics_withNE.js"></script>
+      <!--- Charts --->
+      <script src="assets/js/charts/colours.js"></script>
+      <script src="assets/js/charts/plugins.js"></script>
+      <script src="assets/js/charts/chartMem_Cat.js"></script>
+      <script src="assets/js/charts/chartMem_AgeProfile.js"></script>
+      <script src="assets/js/charts/chartAsset_Cat.js"></script>
+      <script src="assets/js/charts/chartAsset_Opt.js"></script>
+      <script src="assets/js/charts/chartAsset_Comp.js"></script>
+      <script src="assets/js/charts/chartCF_Inc.js"></script>
+      <script src="assets/js/charts/chartCF_Exp.js"></script>
+      <script src="assets/js/charts/chartCF_IncExp.js"></script>
+      <!-- <script src="assets/js/charts/chartCF_Net.js"></script> -->
+      <script src="assets/js/charts/chartIlliquidAssets.js"></script>
+      <script src="assets/js/charts/chartLiquidity.js"></script>
+      <script src="assets/js/charts/chartIlliquidCallDist.js"></script>
+      <script src="assets/js/charts/chartIlliquidCallDist_New.js"></script>
+      <script src="assets/js/charts/chartStoch_Asset.js"></script>
+      <script src="assets/js/charts/chartStoch_CF.js"></script>
+      <script src="assets/js/charts/chartInvret_Class.js"></script>
+      <script src="assets/js/charts/chartInvret_Opt.js"></script>
+      <script src="assets/js/charts/chartInvret_SAA.js"></script>
+
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/buttonGroup.js"></script>
+
+    </body>
+</html>
